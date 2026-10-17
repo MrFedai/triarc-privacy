@@ -15,14 +15,15 @@ satılmaz, reklam ya da analiz için kullanılmaz, üçüncü kişilerle paylaş
 - Konum (isteğe bağlı): "Konumumu kullan"a bastığında telefonun yaklaşık konumu bir kez okunur. Sunucu bunu ~1 km'ye
   yuvarlar, yalnız şehir adını, yuvarlanmış koordinatı ve saat dilimini saklar (namaz vakitleri ve hava için).
   Arka planda konum alınmaz; tam konum saklanmaz ve kayda geçmez.
-- Adımlar (isteğe bağlı, Health Connect): yalnız günlük adım toplamı okunur, yalnız uygulama açıkken (açılışta,
-  uygulamaya dönünce, "Şimdi güncelle" ile). Başka sağlık verisi okunmaz, Health Connect'e hiçbir şey yazılmaz.
-  Adımlar yalnız TRIARC sunucusuna, o günün adımı olarak gider (skor, beslenme hedefi, haftalık rapor).
+- Adımlar (isteğe bağlı, Health Connect): yalnız adım kayıtları okunur, yalnız uygulama açıkken (açılışta,
+  uygulamaya dönünce, "Şimdi güncelle" ile). Kayıtlar telefonda cihaz cihaz (telefon, saat) toplanır ki aynı yürüyüş
+  iki kez sayılmasın; kayıtlar telefondan çıkmaz. Başka sağlık verisi okunmaz, Health Connect'e hiçbir şey yazılmaz.
+  Sunucuya yalnız günün toplamı gider, o günün adımı olarak (skor, beslenme hedefi, haftalık rapor).
 - Bildirim adresi: telefona bildirim gönderebilmek için Firebase Cloud Messaging kaydı. Bildirim metinlerinde
   sağlık ayrıntısı yer almaz.
 
 ## Health Connect verisinin kullanımı
-Health Connect'ten alınan veri (günlük adım toplamı) yalnız uygulamanın gösterdiği işlev için kullanılır:
+Health Connect'ten alınan veri (adımlar; sunucuya yalnız günlük toplam) yalnız uygulamanın gösterdiği işlev için kullanılır:
 günlük adım hedefi, Spor skoru ve beslenme hesabı. Reklam, profil çıkarma, satış ya da başka bir amaçla
 kullanılmaz ve paylaşılmaz. Kullanım Health Connect izinleri politikasına uyar.
 
