@@ -37,4 +37,4 @@ Uygulama ile sunucu arasındaki her bağlantı şifrelidir (HTTPS). Oturum anaht
 ## Tıbbi tavsiye
 TRIARC tıbbi tavsiye vermez; program ve beslenme hesapları kural tabanlıdır.
 
-İletişim: <e-posta ya da Telegram kullanıcı adı>
+İletişim: <fedai1453.gok@gmail.com>
